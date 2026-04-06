@@ -1,0 +1,30 @@
+{
+  "name": "local-npm-vuln-scanner",
+  "version": "1.0.0",
+  "description": "Scan your workspace for known malicious npm packages from recent supply chain attacks (Oct 2025 - Apr 2026)",
+  "main": "scan-malicious-packages.js",
+  "bin": {
+    "local-npm-vuln-scanner": "./scan-malicious-packages.js"
+  },
+  "scripts": {
+    "scan": "node scan-malicious-packages.js",
+    "scan:json": "node scan-malicious-packages.js --json",
+    "scan:quiet": "node scan-malicious-packages.js --quiet"
+  },
+  "keywords": [
+    "security",
+    "npm",
+    "malicious",
+    "supply-chain",
+    "scanner",
+    "vulnerability",
+    "audit"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "scan-malicious-packages.js"
+  ]
+}
